@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/weather")
+@RequestMapping("/api/daily-weather")
 public class WeatherDataController {
     private final WeatherDataService weatherDataService;
 
