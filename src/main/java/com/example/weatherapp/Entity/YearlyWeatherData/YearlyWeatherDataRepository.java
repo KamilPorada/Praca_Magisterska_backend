@@ -8,4 +8,7 @@ import java.util.List;
 @Repository
 public interface YearlyWeatherDataRepository extends JpaRepository<YearlyWeatherData, Integer> {
     List<YearlyWeatherData> findByCityIdAndYearBetween(Integer cityId, Integer startYear, Integer endYear);
+    List<YearlyWeatherData> findByYearGreaterThanEqualAndCity_Id(Integer year, Integer cityId);
+
+
 }
